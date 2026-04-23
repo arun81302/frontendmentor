@@ -5,7 +5,7 @@
    font-family: "Poppins", sans-serif;
 }
 :root {
-  --purple50: Purple 50: hsl(260, 100%, 95%);
+  --purple50: hsl(260, 100%, 95%);
   --purple300: hsl(264, 82%, 80%);
   --purple500: hsl(263, 55%, 52%);
   --White: hsl(0, 0%, 100%);
@@ -16,22 +16,105 @@
   --Darkblue: hsl(219, 29%, 14%);
   --Black: hsl(0, 0%, 7%);
 }
-.container{
-    max-width: 1200px;
-    width: 80%;
-    
-    overflow: hidden;
-    margin: 2em auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    column-gap: 1em;
-    row-gap: 1em;
-    border: 1px solid black;
+html,body,main{
+  height: 100vh;
+  width: 100%;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
+.container{
+  max-width: 1200px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1em;
+  align-items: start;
+}
 .box{
-    width: 100%;
-    border: 2px solid red;
+  height: 100%;  
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px 0px grey;
+}
+.name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.innerbox{
+  /* height: 100%; */
+}
+.section1{
+  grid-column: span 2;
+  background-color: var(--purple500);
+}
+.section1>h1,span,p{
+  color: var(--purple300);
+}
+.section1 h2{
+  color: var(--purple50);
+}
+.section2{
+  background-color: var(--Grey500);
+}
+.section2 h1,span,p{
+  color: var(--Grey200);
+}
+.section2 h2{
+  color: var(--Grey100);
+}
+.section3{
+  grid-row: span 2;
+  background-color: var(--White);
+}
+.section4,.section3 h1,span,p{
+  color: var(--Grey400);
+}
+.section4,.section3 h2{
+  color: var(--Darkblue);
+}
+.section5{
+  grid-column: span 2;
+  background-color: var(--Darkblue);
+}
+.section5 h1,span,p{
+  color: var(--Grey200);
+
+}
+.section5 h2{
+  color: var(--Grey100);
+}
+.innerbox{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.photorow{
+  display: flex;
+  gap: 1em;
+  
+}
+.photorow img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+h1{
+  font-size: 0.8rem;
+}
+span{
+  font-size: 0.7rem;
+}
+h2{
+  font-size: 1rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+p{
+  font-size: 0.8rem;
 }
