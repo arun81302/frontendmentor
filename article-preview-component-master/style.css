@@ -1,10 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Manrope", sans-serif;
 }
 html,body{
     width: 100%;
     min-height: 100vh;
+}
+html{
+    font-size: 13px;
 }
 main{
     width: 100%;
@@ -24,7 +28,7 @@ main{
     width: 40%;
     border: 1px solid red;
 }
-.left-img>img{
+.mainimage{
     width: 100%;
     object-fit: contain;
 }
@@ -38,6 +42,52 @@ main{
 }
 .inner{
     border: 2px solid gold;
-    width: 95%;
-    height: 95%;
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imgbox{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    gap: 1em;
+}
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.iconimage{
+    width: 30px;
+    /* height: px; */
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+
+
+h1{
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
+    line-height: 1.2em;
+}
+p{
+    font-size: 1.1rem;
+    word-spacing: 0.1em;
+    line-height: 1.3em;
+}
+h2{
+    font-size: 1.2rem;
+}
+span{
+    font-weight: 200;
 }
