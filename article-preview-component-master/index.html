@@ -6,12 +6,15 @@
     <!-- displays site properly based on user's device -->
 
     <title>Frontend Mentor | Article preview component</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="up-image-section">
-        <img class="main-image" src="images/drawers.jpg" alt="">
+        <img class="main-image" src="images/drawers.jpg" alt="" />
       </div>
       <div class="mid-text-section">
         <h1>
@@ -24,16 +27,36 @@
           you make any room feel complete.
         </p>
       </div>
+      <div class="bottom-share">
+        <div class="bottom-share-inner">
+          <div class="avatar-share">
+            <div class="share">
+              <p class="share-text">SHARE</p>
+              <img src="images/icon-facebook.svg" alt="" />
+              <img src="images/icon-twitter.svg" alt="" />
+              <img src="images/icon-pinterest.svg" alt="" />
+            </div>
+            <div class="icon">
+              <img src="images/icon-share.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="bottom-avatar-section">
         <div class="avatarinner">
-          <img class="avatar-image" src="images/avatar-michelle.jpg" alt="" />
-          <div class="avatar-name">
-            <h3>Michelle Appleton</h3>
-            <span>28 Jun 2020</span>
+          <div class="avatar-image-name">
+            <img class="avatar-image" src="images/avatar-michelle.jpg" alt="" />
+
+            <div class="avatar-name">
+              <h3>Michelle Appleton</h3>
+              <span>28 Jun 2020</span>
+            </div>
           </div>
-          <img src="images/icon-share.svg" alt="" />
+
+          <img class="icon-image" src="images/icon-share.svg" alt="" />
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
