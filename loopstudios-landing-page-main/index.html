@@ -18,8 +18,9 @@
   </head>
   <body class="min-h-screen">
     <div class="top-image relative">
-      <!-- Hero Image -->
-      <img src="images/mobile/image-hero.jpg" alt="hero section image" />
+      <!-- Hero Image mobile devices-->
+      <img class="md:hidden lg:hidden xl:hidden " src="images/mobile/image-hero.jpg" alt="hero section image" />
+      <img class="hidden md:block md:w-full " src="images/desktop/image-hero.jpg" alt="hero image">
 
       <!-- Navbar -->
       <div
@@ -27,7 +28,7 @@
       >
         <h1 class="text-white text-2xl font-bold">loopstudios</h1>
         <img
-          class="cursor-pointer"
+          class="md:hidden ham-icon cursor-pointer"
           src="images/icon-hamburger.svg"
           alt="hamburger-icon"
         />
@@ -35,7 +36,7 @@
 
       <!-- Hero Text -->
       <div
-        class="main-text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white w-[85%]"
+        class="main-text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white w-[85%] md:max-w-3/5 md:left-65  "
       >
         <h2 class="text-white text-5xl font-extralight m-5">
           IMMERSIVE EXPERIENCES THAT DELIVER
@@ -43,11 +44,11 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden absolute inset-0 bg-black p-6">
+      <div id="mobile-menu" class="hidden md:block md:bg-transparent  absolute inset-0 bg-black p-6">
         <div class="flex justify-between items-center">
-          <h1 class="text-white text-2xl font-bold">loopstudios</h1>
+          <h1 class="text-white text-2xl font-bold md:hidden">loopstudios</h1>
 
-          <img
+          <img class="md:hidden"
             id="close-btn"
             src="images/icon-close.svg"
             alt="close"
@@ -55,12 +56,22 @@
           />
         </div>
 
-        <ul class="mt-20 text-white text-3xl uppercase space-y-6">
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
+        <ul class="mt-20 md:flex md:text-sm md:ml-100  md:-mt-1  md:space-x-4 text-white text-3xl uppercase space-y-6         ">
+          <li
+          class="relative w-fit md:after:content-[''] md:after:absolute md:after:left-1/2 md:after:-translate-x-1/2 md:after:-bottom-2 md:after:w-0 md:after:h-[2px] md:after:bg-white md:hover:after:w-6 md:after:transition-all md:hover:cursor-pointer "
+          >About</li>
+          <li
+          class="relative w-fit md:after:content-[''] md:after:absolute md:after:left-1/2 md:after:-translate-x-1/2 md:after:-bottom-2 md:after:w-0 md:after:h-[2px] md:after:bg-white md:hover:after:w-6 md:after:transition-all md:hover:cursor-pointer "
+          >Careers</li>
+          <li
+          class="relative w-fit md:after:content-[''] md:after:absolute md:after:left-1/2 md:after:-translate-x-1/2 md:after:-bottom-2 md:after:w-0 md:after:h-[2px] md:after:bg-white md:hover:after:w-6 md:after:transition-all md:hover:cursor-pointer "
+          >Events</li>
+          <li
+          class="relative w-fit md:after:content-[''] md:after:absolute md:after:left-1/2 md:after:-translate-x-1/2 md:after:-bottom-2 md:after:w-0 md:after:h-[2px] md:after:bg-white md:hover:after:w-6 md:after:transition-all md:hover:cursor-pointer "
+          >Products</li>
+          <li
+          class="relative w-fit md:after:content-[''] md:after:absolute md:after:left-1/2 md:after:-translate-x-1/2 md:after:-bottom-2 md:after:w-0 md:after:h-[2px] md:after:bg-white md:hover:after:w-6 md:after:transition-all md:hover:cursor-pointer "
+          >Support</li>
         </ul>
       </div>
     </div>
@@ -73,7 +84,7 @@
 
     <!-- text content after image -->
 
-    <div class="leader-text border-2 border-black w-[80%] mx-auto">
+    <div class="leader-text  w-[80%] mx-auto">
       <h2 class="text-4xl text-center font-extralight mb-4">
         The LEADER IN INTERACTIVE VR
       </h2>
@@ -88,7 +99,7 @@
     <!-- grid images at end before footer -->
 
     <div
-      class="grid-images border-2 border-black w-[80%] mx-auto mt-20 grid grid-cols-1 space-y-6"
+      class="grid-images  w-[80%] mx-auto mt-20 grid grid-cols-1 space-y-6"
     >
       <h2 class="text-center text-4xl font-light">OUR CREATIONS</h2>
       <div class="relative">
@@ -110,7 +121,7 @@
       <div class="relative">
         <img src="images/mobile/image-soccer-team.jpg" alt="Soccer team" />
         <p
-          class="absolute text-2xl top-10 left-5 text-white z-10 max-w-30 border-2 font-extralight leading-5.5"
+          class="absolute text-2xl top-10 left-5 text-white z-10 max-w-30 font-extralight leading-5.5"
         >
           SOCCER TEAM VR
         </p>
@@ -160,7 +171,7 @@
       </div>
 
       <button
-        class="border-2 w-fit justify-self-center px-10 py-0.5 tracking-[0.5em]"
+        class="border-2 w-fit justify-self-center px-10 py-0.5 tracking-[0.5em] hover:cursor-pointer hover:bg-black hover:text-white "
       >
         SEE ALL
       </button>
@@ -185,5 +196,6 @@
       </div>
       <p class="text-gray-300  text-xs   mb-20 ">© 2021 Loopstudios. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
