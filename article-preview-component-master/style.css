@@ -56,20 +56,41 @@ body{
 
 .user{
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .avtar-cont{
     display: flex;
-    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
     border: 2px solid red;
     height: 100%;
 }
 .avtar-img{
 height: 100%;
+border-radius: 50%;
+overflow:  hidden;
+
 }
 .avtar-img img{
     height: 100%;
+}
+
+.avtar-name h5{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.avtar-name p{
+    font-size: 0.9rem;
+    word-spacing: 5px;
+}
+
+.share-cont{
+    border-radius: 50%;
+    background-color: white;
+    padding: 7px;
+    cursor: pointer;
 }
