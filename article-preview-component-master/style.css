@@ -3,26 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
 body{
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--light-grayish-blue);
 }
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px hsl(214, 17%, 51%);;
     width: 75%;
     max-width: 1000px;
     min-height: 350px;
     height: 30vh;
     max-height: 500px;
     display: flex;
+    background-color: white;
+    /* overflow: hidden; */
 }
 
 .main-image{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40%;
     height: 100%;
 }
@@ -30,28 +40,31 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .text-content{
     width: 60%;
     height: 100%;
     /* border: 5px solid red; */
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .inner{
     width: 95%;
     height: 95%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display:flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .user{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .user{
@@ -65,9 +78,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 33%;
-    border: 2px solid red;
+    width: 32%;
+    /* border: 2px solid red; */
     height: 100%;
+    min-width: 140px;
+}
+.avtar-name p{
+    color: var(--desaturated-dark-blue);
 }
 .avtar-img{
 height: 100%;
@@ -77,6 +94,7 @@ overflow:  hidden;
 }
 .avtar-img img{
     height: 100%;
+    
 }
 
 .avtar-name h5{
@@ -93,4 +111,45 @@ overflow:  hidden;
     background-color: white;
     padding: 7px;
     cursor: pointer;
+    background-color: var(--very-dark-grayish-blue);
+    
+}
+
+
+
+.wrap{
+   
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    max-width: 300px;
+    gap: 10px;
+    padding: 0.7em 0.7em;
+    position: absolute;
+    bottom: 5.5em;
+    right: -7.5em;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 10px;
+    
+
+}
+.wrap:hover{
+    cursor: pointer;
+}
+.wrap-arrow{
+    width: 13px;
+  height: 13px;
+  
+  transform: rotate(135deg);
+    position: absolute;
+    bottom: -7px;
+   background-color: var(--very-dark-grayish-blue);
+}
+.wrap p{
+    letter-spacing: 6px;
+    color: white;
+}
+
+.hide{
+    display: none;
 }
