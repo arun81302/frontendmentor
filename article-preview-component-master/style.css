@@ -198,6 +198,7 @@ overflow:  hidden;
 /* Mobile devices */
 @media (max-width: 767px) {
   .container {
+    min-width: 310px;
     width: 95%;
     flex-direction: column;
     height: auto;
