@@ -63,9 +63,7 @@ body{
     justify-content: space-around;
 }
 
-.user{
-    /* border: 1px solid green; */
-}
+
 
 .user{
     width: 100%;
@@ -226,7 +224,7 @@ overflow:  hidden;
     margin-bottom: 1.5em;
   }
   .avtar-cont{
-    width: 60%;
+    width: 53%;
     border: 2px solid balck;
   }
   .avtar-name h5{
